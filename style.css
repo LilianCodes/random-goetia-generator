@@ -1,0 +1,64 @@
+body {
+    background-color: #222;
+    color: white;
+    font-family: monospace;
+}
+
+img {
+    background-color: white;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #888;
+    border-radius: 10px;
+    color: white;
+    height: 100px;
+    width: 200px;
+    font-size: 2em;
+}
+
+footer {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+}
+
+#app {
+    width: 800px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#heading {
+    text-align: center;
+}
+
+#sigil {
+    max-width: 256px;
+    display: block;
+}
+
+.heading-p {
+    font-size: 1.5em;
+}
+
+#enn,
+#description {
+    font-size: 1.3em;
+}

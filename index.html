@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Goetia Generator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="heading">
+        <h1>Random Goetia Generator</h1>
+        <p class="heading-p">Welcome to the Random Goetia Generator. This app pulls from the API linked below and places a random Goetic with their Sigil, Name, Enn, and Description.<br/>Press the button below to get started.</p>
+    </div>
+    <div id="app">
+        <img src="" id="sigil">
+        <h1 id="name"></h1>
+        <p id="enn"></p>
+        <p id="description"></p>
+
+        <button onclick="getRandomGoetic()">Get Goetic</button>
+    </div>
+
+    <footer>This app interacts with the <a href="https://ars-goetia-api.onrender.com/">Ars Goetia API</a>. // &copy; <a href="https://github.com/LilianCodes/">xnarisa</a> 2025</footer>
+    <script src="app.js"></script>
+</body>
+</html>
