@@ -2,30 +2,67 @@ body {
     background-color: #222;
     color: white;
     font-family: monospace;
+    margin: 0;
+    padding: 0;
 }
 
-img {
+#app {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 1em;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#heading {
+    text-align: center;
+}
+
+.heading-p {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+#enn,
+#description {
+    font-size: 1.2rem;
+    margin: 1em 0;
+}
+
+#sigil {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
     background-color: white;
     border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 button {
     background-color: #888;
-    border-radius: 10px;
     color: white;
-    height: 100px;
-    width: 200px;
-    font-size: 2em;
+    border: none;
+    border-radius: 10px;
+    padding: 1em 2em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-top: 1.5em;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #aaa;
 }
 
 footer {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
+    padding: 1em 0;
+    font-size: 0.9rem;
 }
 
 a {
@@ -36,29 +73,34 @@ a:hover {
     color: black;
 }
 
-#app {
-    width: 800px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+@media (max-width: 768px) {
+    .heading-p {
+        font-size: 1.25rem;
+    }
+
+    #enn,
+    #description {
+        font-size: 1.05rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+        padding: 0.8em 1.5em;
+    }
 }
 
-#heading {
-    text-align: center;
-}
+@media (max-width: 480px) {
+    .heading-p {
+        font-size: 1.1rem;
+    }
 
-#sigil {
-    max-width: 256px;
-    display: block;
-}
+    #enn,
+    #description {
+        font-size: 1rem;
+    }
 
-.heading-p {
-    font-size: 1.5em;
-}
-
-#enn,
-#description {
-    font-size: 1.3em;
+    button {
+        font-size: 1rem;
+        padding: 0.6em 1.2em;
+    }
 }
